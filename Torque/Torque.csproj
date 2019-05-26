@@ -93,5 +93,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Centre.png" />
+    <Resource Include="Icons\Copy.png" />
+    <Resource Include="Icons\Cut.png" />
+    <Resource Include="Icons\Email.png" />
+    <Resource Include="Icons\FullScreen.png" />
+    <Resource Include="Icons\Help.png" />
+    <Resource Include="Icons\Left.png" />
+    <Resource Include="Icons\New.png" />
+    <Resource Include="Icons\Open.png" />
+    <Resource Include="Icons\Paste.png" />
+    <Resource Include="Icons\Print.png" />
+    <Resource Include="Icons\Right.png" />
+    <Resource Include="Icons\Save.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

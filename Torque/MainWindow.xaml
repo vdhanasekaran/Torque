@@ -5,8 +5,75 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Torque"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="CETIM Cobra" Height="450" Width="800">
     <Grid>
+        
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_New">
+                        <!--<MenuItem.Icon> TODO: Need to add image
+                            <Image Source="/WpfTutorialSamples;component/Images/user.png" />
+                        </MenuItem.Icon>-->
+                    </MenuItem>
+                    <MenuItem Header="_Open"/>
+                    <MenuItem Header="_Save"/>
+                    <Separator/>
+                    <MenuItem Header="_Exit" />
+                </MenuItem>
+                <MenuItem Header="_Edit" />
+                <MenuItem Header="_Units" />
+                <MenuItem Header="_Data" />
+                <MenuItem Header="_Display" />
+                <MenuItem Header="_Tools" />
+                <MenuItem Header="_Language">
+                    <MenuItem Header="_English"/>
+                    <MenuItem Header="_Francais"/>
+                </MenuItem>
+                <MenuItem Header="_Help" />
+            </Menu>
+            <ToolBar DockPanel.Dock="Top" Height="53" Margin="0,29,0,337">
+                <Button>
+                    <Image Source="/Icons/New.png"/>
+                </Button>
+                <Button>
+                    <Image Source="/Icons/Open.png"/>
+                </Button>
+                <Button>
+                    <Image Source="/Icons/Save.png"/>
+                </Button>
+                <Button>
+                    <Image Source="/Icons/Print.png"/>
+                </Button>
+                <Button>
+                    <Image Source="/Icons/Email.png"/>
+                </Button>
+                <Button>
+                    <Image Source="/Icons/Cut.png"/>
+                </Button>
+                <Button>
+                    <Image Source="/Icons/Copy.png"/>
+                </Button>
+                <Button>
+                    <Image Source="/Icons/Paste.png"/>
+                </Button>
+                <ToggleButton Width="20" FontWeight="Bold">B</ToggleButton>
+                <ToggleButton Width="20" FontStyle="Italic">I</ToggleButton>
+                <Button>
+                    <Image Source="/Icons/Left.png"/>
+                </Button>
+                <Button>
+                    <Image Source="/Icons/Centre.png"/>
+                </Button>
+                <Button>
+                    <Image Source="/Icons/Right.png"/>
+                </Button>
+                <Button>
+                    <Image Source="/Icons/FullScreen.png"/>
+                </Button>
+                <Button>
+                    <Image Source="/Icons/Help.png"/>
+                </Button>
+            </ToolBar>
         
     </Grid>
 </Window>
