@@ -60,11 +60,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="LoadingJoint.xaml.cs">
+      <DependentUpon>LoadingJoint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TighteningConditions.xaml.cs">
+      <DependentUpon>TighteningConditions.xaml</DependentUpon>
+    </Compile>
     <Page Include="Assembly.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CalculationMethod.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fastener.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoadingJoint.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -82,11 +96,18 @@
     <Compile Include="CalculationMethod.xaml.cs">
       <DependentUpon>CalculationMethod.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Fastener.xaml.cs">
+      <DependentUpon>Fastener.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ProjectDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TighteningConditions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

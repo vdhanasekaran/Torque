@@ -3,10 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
               xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:Torque"
-             StartupUri="CalculationMethod.xaml">
+             StartupUri="LoadingJoint.xaml">
     <!--StartupUri="ProjectDetails.xaml"-->
     <!--StartupUri="CalculationMethod.xaml"-->
     <!--StartupUri="Assembly.xaml"-->
+    <!--TighteningConditions-->
+    <!--Fastener-->
+    <!--LoadingJoint-->
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
