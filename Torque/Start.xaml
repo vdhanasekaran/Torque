@@ -146,12 +146,12 @@
                 <RadioButton GroupName="XXX" Content="Radio" />
                 <RadioButton GroupName="XXX" Content="Ga Ga" />
                 <Separator/>
-                <RadioButton GroupName="YYY" Style="{StaticResource MaterialDesignToolRadioButton}">
+                <!--<RadioButton GroupName="YYY" Style="{StaticResource MaterialDesignToolRadioButton}">
                     <materialDesign:PackIcon Kind="Radio"/>
                 </RadioButton>
                 <RadioButton GroupName="YYY" Style="{StaticResource MaterialDesignToolRadioButton}">
                     <materialDesign:PackIcon Kind="EmoticonPoop"/>
-                </RadioButton>
+                </RadioButton>-->
                 <Separator/>
                 <ToggleButton/>
             </ToolBar>

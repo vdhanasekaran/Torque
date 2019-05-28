@@ -46,27 +46,27 @@
 
         <Button Grid.Column="1"
     Style="{StaticResource MaterialDesignRaisedButton}"
-    ToolTip="Help" Margin="10,0,169,-9" Grid.Row="1" RenderTransformOrigin="0.498,-0.171" Height="Auto">
+    ToolTip="Help" Margin="10,0,169,-9" Grid.Row="1" RenderTransformOrigin="0.498,-0.171" Height="37" VerticalAlignment="Top" Click="btnHlp_Click">
             Help
         </Button>
         <Button
     Style="{StaticResource MaterialDesignRaisedButton}"
-    ToolTip="Back" Margin="91,1,235,-9" Grid.Row="1" Grid.Column="2" Height="36" VerticalAlignment="Top">
+    ToolTip="Back" Margin="91,1,235,-9" Grid.Row="1" Grid.Column="2" Height="36" VerticalAlignment="Top" Click="btnBack_Click">
             Back
         </Button>
         <Button
     Style="{StaticResource MaterialDesignRaisedButton}"
-    ToolTip="Next" Margin="254,1,69,-9" RenderTransformOrigin="0.428,0.087" Grid.Row="1" Grid.Column="2" Height="Auto">
+    ToolTip="Next" Margin="254,1,69,-9" RenderTransformOrigin="0.428,0.087" Grid.Row="1" Grid.Column="2" Height="Auto" Click="btnNext_Click">
             Next
         </Button>
         <Button
     Style="{StaticResource MaterialDesignRaisedButton}"
-    ToolTip="Finish" Margin="403,1,195,-9" RenderTransformOrigin="0.432,0.087" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="2" Height="Auto">
+    ToolTip="Finish" Margin="403,1,195,-9" RenderTransformOrigin="0.432,0.087" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="2" Height="Auto" Click="btnFinish_Click">
             Finish
         </Button>
         <Button
     Style="{StaticResource MaterialDesignRaisedButton}"
-    ToolTip="Cancel" Margin="114,1,61,-9" Grid.Row="1" RenderTransformOrigin="0.758,-7.888" Grid.Column="3" Height="Auto">
+    ToolTip="Cancel" Margin="114,1,61,-9" Grid.Row="1" RenderTransformOrigin="0.758,-7.888" Grid.Column="3" Height="36" VerticalAlignment="Top" Click="btnCancel_Click">
             Cancel
         </Button>
         <materialDesign:PackIcon Kind="MathCompass"  Grid.Column="1" RenderTransformOrigin="2.295,7.091" Width="25" Height="24" Margin="79,148,0,0" />

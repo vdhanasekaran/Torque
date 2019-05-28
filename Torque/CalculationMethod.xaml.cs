@@ -28,5 +28,32 @@ namespace Torque
         {
 
         }
+
+        private void btnNext_Click(object sender, RoutedEventArgs e)
+        {
+            ProjectDetails projectDetails = new ProjectDetails();
+            projectDetails.Show();
+            this.Close();
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnFinish_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnHlp_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

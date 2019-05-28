@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Torque"
          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:helix="http://helix-toolkit.org/wpf"
          Background="{DynamicResource MaterialDesignPaper}"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         mc:Ignorable="d"
@@ -40,7 +41,7 @@
             <ComboBoxItem Content="Body"></ComboBoxItem>
             <ComboBoxItem Content="Head"></ComboBoxItem>
         </ComboBox>
-        
+
         <ComboBox HorizontalAlignment="Left" Margin="43,221,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.472,-2.955" Grid.Column="1" IsSelected="True">
 
             <ComboBoxItem Content="Bolt" Selector.IsSelected="True" ></ComboBoxItem>
@@ -74,7 +75,7 @@
         </Button>
         <Button
     Style="{StaticResource MaterialDesignRaisedButton}"
-    ToolTip="Finish" Margin="403,1,195,-9" RenderTransformOrigin="0.432,0.087" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="2" Height="Auto">
+    ToolTip="Finish" Margin="403,1,195,-9" RenderTransformOrigin="0.432,0.087" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="2" Height="Auto" Click="Button_Click">
             Finish
         </Button>
         <Button
@@ -97,7 +98,10 @@
         </ComboBox>
         <CheckBox Content="Top Washer" Grid.Column="3" HorizontalAlignment="Left" Margin="62,136,0,0" VerticalAlignment="Top" Width="104"/>
         <CheckBox Content="Bottom Washer" Grid.Column="3" HorizontalAlignment="Left" Margin="62,389,0,0" VerticalAlignment="Top" Width="104"/>
-        <WebBrowser Grid.Column="2" HorizontalAlignment="Left" Margin="10,31,0,25" Width="399"/>
-
+        <!--<WebBrowser Grid.Column="2" HorizontalAlignment="Left" Margin="10,31,0,25" Width="399"/>-->
+        <helix:HelixViewport3D x:Name="viewPort3d" ZoomExtentsWhenLoaded="true" Height="498" VerticalAlignment="Bottom" Grid.Column="2" Margin="0,0,0,15">
+            <!-- Remember to add light to the scene -->
+            <helix:DefaultLights/>
+        </helix:HelixViewport3D>
     </Grid>
 </Window>
