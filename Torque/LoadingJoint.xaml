@@ -35,31 +35,28 @@
             <ColumnDefinition Width="257*"/>
 
         </Grid.ColumnDefinitions>
-        <Separator Grid.Column="1" HorizontalAlignment="Left" Height="10" Margin="4,503,0,0" VerticalAlignment="Top" Width="266"/>
-        <Separator Grid.Column="2" HorizontalAlignment="Left" Height="10" Margin="2,503,0,0" VerticalAlignment="Top" Width="416" Grid.ColumnSpan="2"/>
-        <Separator Grid.Column="3" HorizontalAlignment="Left" Height="10" Margin="4,503,-13,0" VerticalAlignment="Top" Width="266"/>
 
-        <Button Grid.Column="1"
+        <Button Grid.Column="1" Click="btnHlp_Click"
     Style="{StaticResource MaterialDesignRaisedButton}"
     ToolTip="Help" Margin="10,0,169,-9" Grid.Row="1" RenderTransformOrigin="0.498,-0.171" Height="Auto">
             Help
         </Button>
-        <Button
+        <Button Click="btnBack_Click"
     Style="{StaticResource MaterialDesignRaisedButton}"
     ToolTip="Back" Margin="91,1,235,-9" Grid.Row="1" Grid.Column="2" Height="36" VerticalAlignment="Top">
             Back
         </Button>
-        <Button
+        <Button Click="btnNext_Click"
     Style="{StaticResource MaterialDesignRaisedButton}"
     ToolTip="Next" Margin="254,1,69,-9" RenderTransformOrigin="0.428,0.087" Grid.Row="1" Grid.Column="2" Height="Auto">
             Next
         </Button>
-        <Button
+        <Button IsEnabled="False" Click="btnFinish_Click"
     Style="{StaticResource MaterialDesignRaisedButton}"
     ToolTip="Finish" Margin="0,1,170,-9" RenderTransformOrigin="0.432,0.087" Grid.Row="1" Grid.Column="3" Height="Auto">
             Finish
         </Button>
-        <Button
+        <Button Click="btnCancel_Click"
     Style="{StaticResource MaterialDesignRaisedButton}"
     ToolTip="Cancel" Margin="114,1,61,-9" Grid.Row="1" RenderTransformOrigin="0.758,-7.888" Grid.Column="3" Height="Auto">
             Cancel
@@ -70,7 +67,7 @@
         <CheckBox Content="The stripping loads of the thread" Grid.Column="2" HorizontalAlignment="Left"  FontWeight="Bold" Margin="25,242,0,0" VerticalAlignment="Top" Height="18" Width="299"/>
         <CheckBox Content="The stripping loads of the thread" Grid.Column="2" HorizontalAlignment="Left" FontWeight="Bold" Margin="25,278,0,0" VerticalAlignment="Top" Height="18" Width="299"/>
         <CheckBox Content="The stripping loads of the thread" Grid.Column="2" HorizontalAlignment="Left" FontWeight="Bold" Margin="25,329,0,0" VerticalAlignment="Top" Height="18" Width="299"/>
-        <Label Content="Calculation is limited to the determination of the tightening setting &#xA;&#xA;It does not allow to check the non -opening and or the non-sliding of the joint faces and does not approach&#xA;the dynamic behavior of the joint   " Grid.Column="2" FontStyle="Italic" FontWeight="Normal" HorizontalAlignment="Left" Margin="10,390,0,0" VerticalAlignment="Top" Width="597" RenderTransformOrigin="0.946,2.595" Height="120" Grid.ColumnSpan="2">
+        <Label Content="Calculation is limited to the determination of the tightening setting &#xA;&#xA;It does not allow to check the non -opening and or the non-sliding of the joint faces and does not approach&#xA;the dynamic behavior of the joint   " Grid.Column="2" FontStyle="Italic" FontWeight="Normal" HorizontalAlignment="Left" Margin="10,373,0,0" VerticalAlignment="Top" Width="575" RenderTransformOrigin="0.946,2.595" Height="100" Grid.ColumnSpan="2">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -80,6 +77,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
+        <Separator HorizontalAlignment="Left" Height="24" Margin="21,474,0,0" VerticalAlignment="Top" Width="933" Grid.ColumnSpan="3" Grid.Column="1"/>
 
     </Grid>
 </Window>

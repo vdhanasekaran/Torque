@@ -23,5 +23,12 @@ namespace Torque
         {
             InitializeComponent();
         }
+
+        private void btn_Add(object sender, RoutedEventArgs e)
+        {
+            ProjectDetails projectDetails = new ProjectDetails();
+            projectDetails.ShowDialog();
+
+        }
     }
 }

@@ -40,9 +40,6 @@
             <ComboBoxItem Content="Calculation Method Sample2"></ComboBoxItem>
             <ComboBoxItem Content="Calculation Method Sample3"></ComboBoxItem>
         </ComboBox>
-        <Separator Grid.Column="1" HorizontalAlignment="Left" Height="10" Margin="4,503,0,0" VerticalAlignment="Top" Width="266"/>
-        <Separator Grid.Column="2" HorizontalAlignment="Left" Height="10" Margin="2,503,0,0" VerticalAlignment="Top" Width="416"/>
-        <Separator Grid.Column="3" HorizontalAlignment="Left" Height="10" Margin="4,503,0,0" VerticalAlignment="Top" Width="266"/>
 
         <Button Grid.Column="1"
     Style="{StaticResource MaterialDesignRaisedButton}"
@@ -60,7 +57,7 @@
             Next
         </Button>
         <Button
-    Style="{StaticResource MaterialDesignRaisedButton}"
+    Style="{StaticResource MaterialDesignRaisedButton}" IsEnabled="False"
     ToolTip="Finish" Margin="403,1,195,-9" RenderTransformOrigin="0.432,0.087" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="2" Height="Auto" Click="btnFinish_Click">
             Finish
         </Button>
@@ -74,6 +71,7 @@
         <Label Content="Calculation is limited to the determination of the tightening setting &#xA;&#xA;It does not allow to check the non -opening and or the non-sliding of the joint faces and does not approach&#xD;&#xA;the dynamic behavior of the joint   " Grid.Column="2" FontStyle="Italic" FontWeight="Normal" HorizontalAlignment="Left" Margin="0,301,0,0" VerticalAlignment="Top" Width="656" RenderTransformOrigin="0.946,2.595" Height="120" Grid.ColumnSpan="2"/>
         <RadioButton Content="Loading are known" Grid.Column="2" HorizontalAlignment="Left" Margin="61,200,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
         <RadioButton Content="Loading are unknown or not taken into account " Grid.Column="2" HorizontalAlignment="Left" Margin="61,243,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="10,487,0,0" VerticalAlignment="Top" Width="948" Grid.ColumnSpan="3" Grid.Column="1"/>
 
     </Grid>
 </Window>

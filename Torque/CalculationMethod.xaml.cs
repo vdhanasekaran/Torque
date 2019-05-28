@@ -31,14 +31,15 @@ namespace Torque
 
         private void btnNext_Click(object sender, RoutedEventArgs e)
         {
-            ProjectDetails projectDetails = new ProjectDetails();
-            projectDetails.Show();
+            Assembly assembly = new Assembly();
+            assembly.Show();
             this.Close();
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
-
+            
+            this.Close();
         }
 
         private void btnFinish_Click(object sender, RoutedEventArgs e)
@@ -48,7 +49,9 @@ namespace Torque
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-
+            ProjectDetails projectDetails = new ProjectDetails();
+            projectDetails.Show();
+            this.Close();
         }
 
         private void btnHlp_Click(object sender, RoutedEventArgs e)

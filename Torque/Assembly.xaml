@@ -54,31 +54,28 @@
             <ComboBoxItem Content="Thin nut"></ComboBoxItem>
             <ComboBoxItem Content="Standard nut"></ComboBoxItem>
         </ComboBox>
-        <Separator Grid.Column="1" HorizontalAlignment="Left" Height="10" Margin="4,503,0,0" VerticalAlignment="Top" Width="266"/>
-        <Separator Grid.Column="2" HorizontalAlignment="Left" Height="10" Margin="2,503,0,0" VerticalAlignment="Top" Width="416"/>
-        <Separator Grid.Column="3" HorizontalAlignment="Left" Height="10" Margin="4,503,0,0" VerticalAlignment="Top" Width="266"/>
 
-        <Button Grid.Column="1"
+        <Button Grid.Column="1" Click="btnHlp_Click"
     Style="{StaticResource MaterialDesignRaisedButton}"
     ToolTip="Help" Margin="10,0,169,-9" Grid.Row="1" RenderTransformOrigin="0.498,-0.171" Height="Auto">
             Help
         </Button>
         <Button
-    Style="{StaticResource MaterialDesignRaisedButton}"
+    Style="{StaticResource MaterialDesignRaisedButton}" Click="btnBack_Click"
     ToolTip="Back" Margin="91,1,235,-9" Grid.Row="1" Grid.Column="2" Height="36" VerticalAlignment="Top">
             Back
         </Button>
-        <Button
+        <Button Click="btnNext_Click"
     Style="{StaticResource MaterialDesignRaisedButton}"
     ToolTip="Next" Margin="254,1,69,-9" RenderTransformOrigin="0.428,0.087" Grid.Row="1" Grid.Column="2" Height="Auto">
             Next
         </Button>
-        <Button
+        <Button IsEnabled="False" Click="btnFinish_Click"
     Style="{StaticResource MaterialDesignRaisedButton}"
-    ToolTip="Finish" Margin="403,1,195,-9" RenderTransformOrigin="0.432,0.087" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="2" Height="Auto" Click="Button_Click">
+    ToolTip="Finish" Margin="403,1,195,-9" RenderTransformOrigin="0.432,0.087" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="2" Height="Auto" >
             Finish
         </Button>
-        <Button
+        <Button Click="btnCancel_Click"
     Style="{StaticResource MaterialDesignRaisedButton}"
     ToolTip="Resource name: MaterialDesignRaisedButton" Margin="114,1,61,-9" Grid.Row="1" RenderTransformOrigin="0.758,-7.888" Grid.Column="3" Height="Auto">
             Cancel
@@ -103,5 +100,6 @@
             <!-- Remember to add light to the scene -->
             <helix:DefaultLights/>
         </helix:HelixViewport3D>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="10,488,0,0" VerticalAlignment="Top" Width="948" Grid.ColumnSpan="3" Grid.Column="1"/>
     </Grid>
 </Window>
