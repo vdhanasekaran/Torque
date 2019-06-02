@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Torque"
+           xmlns:h="http://helixtoolkit.codeplex.com"
          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:helix="http://helix-toolkit.org/wpf"
          Background="{DynamicResource MaterialDesignPaper}"
@@ -96,9 +97,19 @@
         <CheckBox Content="Top Washer" Grid.Column="3" HorizontalAlignment="Left" Margin="62,136,0,0" VerticalAlignment="Top" Width="104"/>
         <CheckBox Content="Bottom Washer" Grid.Column="3" HorizontalAlignment="Left" Margin="62,389,0,0" VerticalAlignment="Top" Width="104"/>
         <!--<WebBrowser Grid.Column="2" HorizontalAlignment="Left" Margin="10,31,0,25" Width="399"/>-->
-        <helix:HelixViewport3D x:Name="viewPort3d" ZoomExtentsWhenLoaded="true" Height="498" VerticalAlignment="Bottom" Grid.Column="2" Margin="0,0,0,15">
-            <!-- Remember to add light to the scene -->
-            <helix:DefaultLights/>
+        <helix:HelixViewport3D x:Name="view" RotationSensitivity="1" BorderThickness="0.001"  Control.MouseDoubleClick="view_MouseDoubleClick" IsHeadLightEnabled="True" Grid.Column="2" ZoomExtentsWhenLoaded="True" Background="LightBlue" ShowCoordinateSystem="True"  Height="450" Grid.ColumnSpan="2" Margin="0,32,215,31">
+           
+            <helix:HelixViewport3D.Camera>
+              
+                <PerspectiveCamera FieldOfView="45" UpDirection="0,1,0" LookDirection="0,0,-1" Position="0,0,10">
+                </PerspectiveCamera>
+            </helix:HelixViewport3D.Camera>
+            <!--<h:SphereVisual3D Center="1,1,1" Radius="1.2" Fill="White"/>
+            <h:SphereVisual3D Center="-1,-1,1" Radius="1.4" Fill="Red"/>
+            <h:SphereVisual3D Center="-1,1,-1" Radius="1.6" Fill="Green"/>
+            <h:SphereVisual3D Center="1,-1,-1" Radius="1.8" Fill="Blue"/>-->
+            <!--<h:HelixVisual3D Turns="4" Length="10" MeshSizeU="500" MeshSizeV="500"/>-->
+            <local:Create3DModel  MeshSizeU="360" MeshSizeV="240" Fill="DarkRed" C2="1.7" />
         </helix:HelixViewport3D>
         <Separator HorizontalAlignment="Left" Height="21" Margin="10,488,0,0" VerticalAlignment="Top" Width="948" Grid.ColumnSpan="3" Grid.Column="1"/>
     </Grid>

@@ -81,6 +81,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Create3DModel.cs" />
     <Compile Include="LoadingJoint.xaml.cs">
       <DependentUpon>LoadingJoint.xaml</DependentUpon>
     </Compile>

@@ -19,15 +19,16 @@ namespace Torque
     /// <summary>
     /// Interaction logic for Assembly.xaml
     /// </summary>D:\Ramk\Bolt And Torque\Torque\Assets\3D_Models\InteractiveMeshCursor.fbx
-    public partial class Assembly : Window
+    public partial class Assembly 
     {
         private const string ModelPath = "Model/Model.stl";
         public Assembly()
         {
             InitializeComponent();
-            ModelVisual3D device3D = new ModelVisual3D();
-            device3D.Content = Display3D(ModelPath);
-            viewPort3d.Children.Add(device3D);
+            view.RotateGesture = new MouseGesture(MouseAction.LeftClick);
+            //ModelVisual3D device3D = new ModelVisual3D();
+            //device3D.Content = Display3D(ModelPath);
+            //view.Children.Add(device3D);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -39,7 +40,7 @@ namespace Torque
             Model3D Device = null;
             try
             {
-                viewPort3d.RotateGesture = new MouseGesture(MouseAction.LeftClick);
+                view.RotateGesture = new MouseGesture(MouseAction.LeftClick);
                 ModelImporter import = new ModelImporter();
                 Device = import.Load(ModelPath);
             }
@@ -75,6 +76,11 @@ namespace Torque
         }
 
         private void btnHlp_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void view_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
 
         }
